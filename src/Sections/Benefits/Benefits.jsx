@@ -28,7 +28,7 @@ function Benefits() {
     <section
       id="beneficios"
       aria-labelledby="benefits-title"
-      className="bg-[#f8f9f5] py-20 text-[#071d22] lg:py-30"
+      className="scroll-mt-19.5 bg-[#f8f9f5] py-20 text-[#071d22] lg:py-30"
     >
       <div className="mx-auto w-full px-6 sm:w-[90%] sm:px-0 lg:w-[84%] 2xl:w-[76%]">
         <p className="flex items-center gap-3 text-xs font-medium tracking-[0.2em] text-[#718c83] uppercase before:h-px before:w-8 before:bg-[#afc1b9]">
@@ -36,7 +36,7 @@ function Benefits() {
         </p>
         <h2
           id="benefits-title"
-          className="mt-5 text-[clamp(32px,3.5vw,56px)] leading-[1.08] font-semibold tracking-tighter"
+          className="mt-6 text-balance text-[clamp(32px,3.5vw,56px)] leading-[1.08] font-semibold tracking-tighter"
         >
           Tudo o que você precisa.
           <br />

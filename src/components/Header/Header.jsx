@@ -30,8 +30,18 @@ function Brand({ onClick }) {
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(() => window.scrollY > 0);
   const toggleRef = useRef(null);
   const dialogRef = useRef(null);
+
+  useEffect(() => {
+    function onScroll() {
+      setIsScrolled(window.scrollY > 0);
+    }
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -68,11 +78,11 @@ function Header() {
   }, [isOpen]);
 
   return (
-    <header className="bg-[linear-gradient(105deg,#f9fbf2_0%,#f6faed_73%,#e5f5c4_100%)] text-[#103D32] [&_a:focus-visible]:outline-3 [&_a:focus-visible]:outline-offset-5 [&_a:focus-visible]:outline-[#103D32] [&_button:focus-visible]:outline-3 [&_button:focus-visible]:outline-offset-5 [&_button:focus-visible]:outline-[#103D32]">
+    <header className={`fixed inset-x-0 top-0 z-50 text-[#f8f9f5] transition-colors duration-300 [&>div>a:first-child]:text-[#f8f9f5] [&>div>button]:text-[#f8f9f5] [&_a:focus-visible]:outline-3 [&_a:focus-visible]:outline-offset-5 [&_a:focus-visible]:outline-[#b9f45d] [&_button:focus-visible]:outline-3 [&_button:focus-visible]:outline-offset-5 [&_button:focus-visible]:outline-[#b9f45d] ${isScrolled ? "bg-[#0c2924]" : "bg-transparent"}`}>
       <div className="mx-auto flex min-h-19.5 w-full items-center justify-between gap-4 px-6 py-3.5 sm:w-[90%] sm:px-0 md:gap-8 lg:w-[84%] 2xl:w-[76%]">
         <Brand />
         <nav
-          className="hidden items-center gap-9 md:flex"
+          className="hidden items-center gap-9 md:flex [&_a]:text-[#d8eee5]"
           aria-label="Navegação principal"
         >
           {links.map(([label, href]) => (
