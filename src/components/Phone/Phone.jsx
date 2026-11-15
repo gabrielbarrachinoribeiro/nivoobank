@@ -78,7 +78,7 @@ function Phone() {
           <div className="mt-4 flex items-center justify-between gap-2 text-xs">
             <span className="text-[#b4c6b8]">Conta digital · 04291-8</span>
             <span className="rounded-full bg-[#b9f45d]/15 px-2 py-1 text-[#b9f45d]">
-              Nivoo
+              nivoobank
             </span>
           </div>
         </div>
@@ -95,7 +95,7 @@ function Phone() {
         <div className="relative overflow-hidden rounded-[20px] bg-[linear-gradient(110deg,#cdfb86,#adf04b)] p-4">
           <div className="pointer-events-none absolute -right-8 -bottom-12 size-28 rounded-full border border-[#103d32]/10" />
           <div className="relative flex items-center justify-between">
-            <span className="text-base font-bold tracking-[-0.5px]">nivoo</span>
+            <span className="text-base font-bold tracking-[-0.5px]">nivoobank</span>
             <span className="text-xs tracking-[0.12em]">VIRTUAL</span>
           </div>
           <p className="relative mt-3 text-sm tracking-[0.15em]">•••• 4291</p>
@@ -127,7 +127,7 @@ function Phone() {
           ))}
         </div>
       </div>
-      <div className="relative mt-2 flex w-fit items-center gap-3 self-start rounded-[20px] bg-white px-4 py-4 shadow-[0_8px_30px_#103d3208] 2xl:absolute 2xl:top-19 2xl:right-[calc(100%-9px)] 2xl:mt-0 2xl:whitespace-nowrap">
+      <div className="relative mt-2 hidden w-fit items-center gap-3 self-start md:flex rounded-[20px] bg-white px-4 py-4 shadow-[0_8px_30px_#103d3208] 2xl:absolute 2xl:top-19 2xl:right-[calc(100%-9px)] 2xl:mt-0 2xl:whitespace-nowrap">
         <span className="flex size-9 items-center justify-center rounded-full bg-[#b9f45d]">
           <ArrowUpRight size={19} />
         </span>
@@ -136,7 +136,7 @@ function Phone() {
           <p className="text-xs text-[#78867e]">Pix recebido</p>
         </div>
       </div>
-      <div className="relative flex w-fit items-center gap-3 self-end rounded-[20px] bg-white px-4 py-4 shadow-[0_8px_30px_#103d3208] 2xl:absolute 2xl:bottom-24 2xl:left-[calc(100%-9px)] 2xl:whitespace-nowrap">
+      <div className="relative hidden w-fit items-center gap-3 self-end md:flex rounded-[20px] bg-white px-4 py-4 shadow-[0_8px_30px_#103d3208] 2xl:absolute 2xl:bottom-24 2xl:left-[calc(100%-9px)] 2xl:whitespace-nowrap">
         <span className="flex size-9 items-center justify-center rounded-full bg-[#103d32] text-[#b9f45d]">
           <ShieldCheck size={18} />
         </span>
@@ -144,7 +144,7 @@ function Phone() {
           <p className="text-sm font-semibold text-[#101c16]">
             Compra aprovada
           </p>
-          <p className="text-xs text-[#78867e]">Proteção Nivoo ativa</p>
+          <p className="text-xs text-[#78867e]">Proteção nivoobank ativa</p>
         </div>
       </div>
     </div>

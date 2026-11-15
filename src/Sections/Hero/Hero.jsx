@@ -27,11 +27,11 @@ function Hero() {
             Uma conta digital feita para simplificar sua vida. Controle suas finanças, faça transferências e aproveite mais liberdade, tudo em um só lugar.
           </p>
           <div className="mt-7 flex flex-wrap gap-3 [&_a:focus-visible]:outline-2 [&_a:focus-visible]:outline-offset-4 [&_a:focus-visible]:outline-[#b9f45d]">
-            <a href="#abrir-conta" className="inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-[#b9f45d] px-7 py-4 text-sm font-medium text-[#103d32] transition-colors duration-300 hover:bg-[#cdfb86] sm:text-base">
+            <a href="#abrir-conta" className="inline-flex w-full sm:w-auto min-h-14 items-center justify-center gap-3 rounded-full bg-[#b9f45d] px-7 py-4 text-sm font-medium text-[#103d32] transition-colors duration-300 hover:bg-[#cdfb86] sm:text-base">
               Abra sua conta <ArrowRight size={18} aria-hidden="true" />
             </a>
-            <a href="#sobre-nos" className="inline-flex min-h-14 items-center justify-center rounded-full border border-white/20 px-7 py-4 text-sm font-medium transition-colors duration-300 hover:bg-white/10 sm:text-base">
-              Conheça a Nivoo
+            <a href="#sobre-nos" className="inline-flex w-full sm:w-auto min-h-14 items-center justify-center rounded-full border border-white/20 px-7 py-4 text-sm font-medium transition-colors duration-300 hover:bg-white/10 sm:text-base">
+              Conheça a nivoobank
             </a>
           </div>
           <p className="mt-6 flex items-start gap-3 text-sm leading-relaxed text-[#b4ccc3]">

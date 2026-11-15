@@ -149,7 +149,7 @@ function Header() {
             ))}
           </nav>
           <a
-            className={`${ctaClasses} inline-flex min-h-14 shrink-0 text-base`}
+            className={`${ctaClasses} inline-flex w-full min-h-14 shrink-0 text-base`}
             href="#abrir-conta"
             onClick={() => setIsOpen(false)}
           >

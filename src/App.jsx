@@ -2,6 +2,10 @@
 import Hero from './Sections/Hero/Hero'
 import Benefits from './Sections/Benefits/Benefits'
 import Experience from './Sections/Experience/Experience'
+import About from './Sections/About/About'
+import Testimonials from './Sections/Testimonials/Testimonials'
+import CTA from './components/CTA/CTA'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
@@ -11,7 +15,11 @@ function App() {
         <Hero/>
         <Benefits/>
         <Experience/>
+        <About/>
+        <Testimonials/>
+        <CTA/>
       </main>
+      <Footer/>
     </>
   )
 }

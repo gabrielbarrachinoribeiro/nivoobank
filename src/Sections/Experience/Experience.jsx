@@ -22,14 +22,14 @@ const features = [
 function Experience() {
   return (
     <section
-      id="sobre-nos"
+      id="experiencia"
       aria-labelledby="experience-title"
       className="scroll-mt-19.5 overflow-hidden bg-[#103d32] py-20 text-[#f8f9f5] lg:py-30"
     >
       <div className="mx-auto grid w-full items-center gap-14 px-6 sm:w-[90%] sm:px-0 lg:w-[84%] lg:grid-cols-[1.1fr_1fr] lg:gap-12 2xl:w-[76%]">
         <div>
           <p className="flex items-center gap-3 text-xs font-medium tracking-[0.2em] text-[#b9f45d] uppercase before:h-px before:w-8 before:bg-[#b9f45d]/40">
-            Seu banco Nivoo
+            Seu banco nivoobank
           </p>
           <h2
             id="experience-title"
@@ -56,7 +56,7 @@ function Experience() {
           </ul>
           <a
             href="#abrir-conta"
-            className="mt-10 inline-flex min-h-12 items-center justify-center gap-3 rounded-full border border-[#b9f45d]/40 px-6 py-3 text-sm font-medium text-[#b9f45d] transition-colors duration-300 hover:bg-[#b9f45d] hover:text-[#103d32] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#b9f45d]"
+            className="mt-10 inline-flex w-full sm:w-auto min-h-12 items-center justify-center gap-3 rounded-full border border-[#b9f45d]/40 px-6 py-3 text-sm font-medium text-[#b9f45d] transition-colors duration-300 hover:bg-[#b9f45d] hover:text-[#103d32] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#b9f45d]"
           >
             Abra sua conta <ArrowRight size={16} aria-hidden="true" />
           </a>
